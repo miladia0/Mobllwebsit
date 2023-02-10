@@ -1,0 +1,84 @@
+body{
+    margin: 0px;
+}
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.nave{
+    display: flex;
+    justify-content:space-between ;
+    padding: 38px;
+
+}
+.leftside{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.nave>.leftside>div {
+      margin-right: 20px ;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    /* text-decoration: inherit ; */
+
+}
+.navlink{
+    height: 22px;
+    border-bottom: 1px solid transparent ;
+    transition: border-bottom 0.5s;
+}
+.navlink a{
+color: #f20089;
+text-decoration: none;
+transition: 0.5s;
+}
+.navlink:hover{
+    border-bottom: 2px solid black;
+}
+.porfolioitem{
+  display: grid;  
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.porfoliosingel{
+    position: relative;
+}
+.porfolioimgback{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.imgtext{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px ;
+    padding-right: 100px;
+    align-items: center;
+    /* z-index: 2; */
+}
+.logo{
+    width:50% ;
+    margin-bottom: 20px;
+}
+.imgtext{
+    transition: 1s;
+    /* color: transparent; */
+}
+.imgtext:hover{
+    font-weight: 900;
+    color: seagreen;
+    font-size: 30px;
+}
+.imgdarken{
+    transition: 1s;
+    filter:brightness(10%);
+    cursor: pointer;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./index.css">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="nave">
+            <div class="leftside">
+                <div class="navlink">
+                    <a href="./index.html">home</a>
+                </div>
+                <div class="navlink">
+                    <a href="/about.html">about</a>
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="brand">
+                    <div>
+                made by milad.moeeni
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="porfolioitem">
+                <div class="porfoliosingel">
+                    <div class="porfolioimgback" style="background-image:url(./img/mobleback.jpeg)"><a href="#"></a>
+
+                    </div>
+                    <div class="imgtext">
+                        <div class="logo">
+                            <img src="./logo/samsung.png" alt="mobile logo">
+
+                        </div>
+                        <div class="subtitle">samsung</div>
+                    </div>
+                </div>
+                <div class="porfoliosingel">
+                    <div class="porfolioimgback" style="background-image:url(./img/mobile1.jpeg)">
+
+                    </div>
+                    <div class="imgtext">
+                        <div class="logo">
+                            <img src="./logo/apple.png" alt="mobile logo">
+
+                        </div>
+                        <div class="subtitle">apple</div>
+                    </div>
+                </div>
+                <div class="porfoliosingel">
+                    <div class="porfolioimgback" style="background-image:url(./img/mobile2.jpeg)">
+
+                    </div>
+                    <div class="imgtext">
+                        <div class="logo">
+                            <img src="./logo/huawei.png" alt="mobile logo">
+
+                        </div>
+                        <div class="subtitle"> huawei</div>
+                    </div>
+                </div>
+                <div class="porfoliosingel">
+                    <div class="porfolioimgback" style="background-image:url(./img/mobile3.jpeg)">
+
+                    </div>
+                    <div class="imgtext">
+                        <div class="logo">
+                            <img src="./logo/xiaomi.png" alt="mobile logo">
+
+                        </div>
+                        <div class="subtitle"> xiaomi</div>
+                    </div>
+                </div>
+                <div class="porfoliosingel">
+                    <div class="porfolioimgback" style="background-image:url(./img/mobile4.jpeg)">
+
+                    </div>
+                    <div class="imgtext">
+                        <div class="logo">
+                            <img src="./logo/nokia.png" alt="mobile logo">
+
+                        </div>
+                        <div class="subtitle">nokia</div>
+                    </div>
+                </div>
+                <div class="porfoliosingel">
+                    <div class="porfolioimgback" style="background-image:url(./img/mobile5.jpeg)">
+
+                    </div>
+                    <div class="imgtext">
+                        <div class="logo">
+                            <img src="./logo/lenovo.png" alt="mobile logo">
+
+                        </div>
+                        <div class="subtitle"> lenovo</div>
+                    </div>
+                </div>
+                <div class="porfoliosingel">
+                    <div class="porfolioimgback" style="background-image:url(./img/mobile6.jpeg)">
+
+                    </div>
+                    <div class="imgtext">
+                        <div class="logo">
+                            <img src="./logo/microsoft.png" alt="mobile logo">
+
+                        </div>
+                        <div class="subtitle"> microsoft</div>
+                    </div>
+                </div>
+                <div class="porfoliosingel">
+                    <div class="porfolioimgback" style="background-image:url(./img/mobile7.jpeg)">
+
+                    </div>
+                    <div class="imgtext">
+                        <div class="logo">
+                            <img src="./logo/sony.png" alt="mobile logo">
+
+                        </div>
+                        <div class="subtitle"> sony</div>
+                    </div>
+                </div>
+                <div class="porfoliosingel">
+                    <div class="porfolioimgback" style="background-image:url(./img/mobile8.jpeg)">
+
+                    </div>
+                    <div class="imgtext">
+                        <div class="logo">
+                            <img src="./logo/htc.png" alt="mobile logo">
+
+                        </div>
+                        <div class="subtitle"> <a href="#"> اچ تی سی</a> htc</div>
+                    </div>
+                </div>
+                <div class="porfoliosingel">
+                    <div class="porfolioimgback" style="background-image:url(./img/mobile9.jpeg)">
+
+                    </div>
+                    <div class="imgtext">
+                        <div class="logo">
+                            <img src="./logo/dell.png" alt="mobile logo">
+
+                        </div>
+                        <div class="subtitle"> dell</div>
+                    </div>
+                </div>
+                <div class="porfoliosingel">
+                    <div class="porfolioimgback" style="background-image:url(./img/mobile10.jpeg)">
+
+                    </div>
+                    <div class="imgtext">
+                        <div class="logo">
+                            <img src="./logo/hp.png" alt="mobile logo">
+
+                        </div>
+                        <div class="subtitle"> hp</div>
+                    </div>
+                </div>
+                <div class="porfoliosingel">
+                    <div class="porfolioimgback" style="background-image:url(./img/mobile11.jpeg)">
+
+                    </div>
+                    <div class="imgtext">
+                        <div class="logo">
+                            <img src="./logo/asus.png" alt="mobile logo">
+
+                        </div>
+                        <div class="subtitle"> asus</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    const porfolioitem = document.querySelectorAll('.porfoliosingel')
+    porfolioitem.forEach(porfoliosingel => {
+        porfoliosingel.addEventListener('mouseover', () => {
+            console.log(porfoliosingel.childNodes[1].classList);
+            porfoliosingel.childNodes[1].classList.add('imgdarken');
+        })
+        porfoliosingel.addEventListener('mouseout', () => {
+            console.log(porfoliosingel.childNodes[1].classList);
+            porfoliosingel.childNodes[1].classList.remove('imgdarken');
+        })
+
+    })
+
+</script>
+
+</html>
